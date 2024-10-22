@@ -50,7 +50,6 @@
           (load-theme theme-sym :no-confirm))))
     (ts-refresh-inline-images)))
 
-;;;###autoload
 (defun theme-switcher-consult-choose-theme ()
   "Choose and preview themes using consult, organized by Light/Dark categories."
   (interactive)
@@ -82,6 +81,5 @@
       (when theme-chosen
         (message "Loaded %s" theme-chosen)))))
 
-;;;###autoload
 (provide 'theme-switcher-consult)
 ;;; theme-switcher-consult.el ends here
